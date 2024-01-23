@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5be4dbd2ca804cbf765f43893f388548 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5be4dbd2ca804cbf765f43893f388548" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5be4dbd2ca804cbf765f43893f388548 = L.map(
+                "map_5be4dbd2ca804cbf765f43893f388548",
+                {
+                    center: [39.75858737911088, -84.19290786537498],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d4490f3286b76979b4b4c1a30118326 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6d4490f3286b76979b4b4c1a30118326.addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+            var marker_4b236d5e9a0946f5490c45cbb4306803 = L.marker(
+                [39.84589, -84.117218],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_705fef74f16e4ea9f568d26de57b5825 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85d3ca76b45696b91577a90c183a93b1 = $(`<div id="html_85d3ca76b45696b91577a90c183a93b1" style="width: 100.0%; height: 100.0%;"><strong>Alematic artisan ales</strong><br>6182 Chambersburg Rd, Huber Heights, OH 45424, United States</div>`)[0];
+                popup_705fef74f16e4ea9f568d26de57b5825.setContent(html_85d3ca76b45696b91577a90c183a93b1);
+            
+        
+
+        marker_4b236d5e9a0946f5490c45cbb4306803.bindPopup(popup_705fef74f16e4ea9f568d26de57b5825)
+        ;
+
+        
+    
+    
+            marker_4b236d5e9a0946f5490c45cbb4306803.bindTooltip(
+                `<div>
+                     Alematic artisan ales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f55b25425c73a50bb7409222141afa87 = L.marker(
+                [39.7520546, -84.1773413],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_82ef8fb6f6dfc81937f9da07abc9a99f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a29764d9c4d8fb35fb113103f6c069fb = $(`<div id="html_a29764d9c4d8fb35fb113103f6c069fb" style="width: 100.0%; height: 100.0%;"><strong>Branch and Bone Artisan Ales</strong><br>905 Wayne Ave, Dayton, OH 45410, United States</div>`)[0];
+                popup_82ef8fb6f6dfc81937f9da07abc9a99f.setContent(html_a29764d9c4d8fb35fb113103f6c069fb);
+            
+        
+
+        marker_f55b25425c73a50bb7409222141afa87.bindPopup(popup_82ef8fb6f6dfc81937f9da07abc9a99f)
+        ;
+
+        
+    
+    
+            marker_f55b25425c73a50bb7409222141afa87.bindTooltip(
+                `<div>
+                     Branch and Bone Artisan Ales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78e1bd107f3d34af51ad69034c6433e8 = L.marker(
+                [39.6360965, -84.06981329999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_63f93030d74eadfcc09cf81fd37ab779 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84fb4bf2264144df5ca70c850a400739 = $(`<div id="html_84fb4bf2264144df5ca70c850a400739" style="width: 100.0%; height: 100.0%;"><strong>Bellbrook Brewing co</strong><br>26 E Franklin St, Bellbrook, OH 45305, United States</div>`)[0];
+                popup_63f93030d74eadfcc09cf81fd37ab779.setContent(html_84fb4bf2264144df5ca70c850a400739);
+            
+        
+
+        marker_78e1bd107f3d34af51ad69034c6433e8.bindPopup(popup_63f93030d74eadfcc09cf81fd37ab779)
+        ;
+
+        
+    
+    
+            marker_78e1bd107f3d34af51ad69034c6433e8.bindTooltip(
+                `<div>
+                     Bellbrook Brewing co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec5beef1801f23b07c926d6edc31b606 = L.marker(
+                [39.7438098, -84.6353626],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_8e155deddd2a6a106fdec5376625f5b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0f0344d5457ec7f7638264770171a01 = $(`<div id="html_a0f0344d5457ec7f7638264770171a01" style="width: 100.0%; height: 100.0%;"><strong>Bushrod brew works</strong><br>117 E Main St, Eaton, OH 45320, United States</div>`)[0];
+                popup_8e155deddd2a6a106fdec5376625f5b1.setContent(html_a0f0344d5457ec7f7638264770171a01);
+            
+        
+
+        marker_ec5beef1801f23b07c926d6edc31b606.bindPopup(popup_8e155deddd2a6a106fdec5376625f5b1)
+        ;
+
+        
+    
+    
+            marker_ec5beef1801f23b07c926d6edc31b606.bindTooltip(
+                `<div>
+                     Bushrod brew works
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_065f54f8d17745ca6891675bd9e0065b = L.marker(
+                [39.6283578, -84.19577869999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_c1ecdfdf27b915af76ef6199ef790702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08ba48fcc15836d396d70fa30d2b2624 = $(`<div id="html_08ba48fcc15836d396d70fa30d2b2624" style="width: 100.0%; height: 100.0%;"><strong>Bock Family Brewing</strong><br>8150 Washington Village Dr, Dayton, OH 45458, United States</div>`)[0];
+                popup_c1ecdfdf27b915af76ef6199ef790702.setContent(html_08ba48fcc15836d396d70fa30d2b2624);
+            
+        
+
+        marker_065f54f8d17745ca6891675bd9e0065b.bindPopup(popup_c1ecdfdf27b915af76ef6199ef790702)
+        ;
+
+        
+    
+    
+            marker_065f54f8d17745ca6891675bd9e0065b.bindTooltip(
+                `<div>
+                     Bock Family Brewing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f404ea05f3c620bebae120edd7fb743e = L.marker(
+                [39.7288606, -84.1982163],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_6d6b130dacf16ffd287fb9bc3a2326d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbde8b80b3c4e221f448aaf8673661e6 = $(`<div id="html_dbde8b80b3c4e221f448aaf8673661e6" style="width: 100.0%; height: 100.0%;"><strong>Carillon Brewing co</strong><br>1000 Carillon Blvd, Dayton, OH 45409, United States</div>`)[0];
+                popup_6d6b130dacf16ffd287fb9bc3a2326d3.setContent(html_dbde8b80b3c4e221f448aaf8673661e6);
+            
+        
+
+        marker_f404ea05f3c620bebae120edd7fb743e.bindPopup(popup_6d6b130dacf16ffd287fb9bc3a2326d3)
+        ;
+
+        
+    
+    
+            marker_f404ea05f3c620bebae120edd7fb743e.bindTooltip(
+                `<div>
+                     Carillon Brewing co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdb79465a66a3badc2a87cd39ba63c16 = L.marker(
+                [39.5780448, -84.2289047],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_1ae4d90c21cb4191923e723291b63098 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3478980d25911d0f4229942d8b6b1fc2 = $(`<div id="html_3478980d25911d0f4229942d8b6b1fc2" style="width: 100.0%; height: 100.0%;"><strong>Crooked Handle Brewing Co</strong><br>760 N Main St, Springboro, OH 45066, United States</div>`)[0];
+                popup_1ae4d90c21cb4191923e723291b63098.setContent(html_3478980d25911d0f4229942d8b6b1fc2);
+            
+        
+
+        marker_cdb79465a66a3badc2a87cd39ba63c16.bindPopup(popup_1ae4d90c21cb4191923e723291b63098)
+        ;
+
+        
+    
+    
+            marker_cdb79465a66a3badc2a87cd39ba63c16.bindTooltip(
+                `<div>
+                     Crooked Handle Brewing Co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd476940363361bf3d482db9d60a3e01 = L.marker(
+                [39.7022426, -84.1411226],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_eb806059858f0c05b5b60616b9d21013 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58eb5a0eeba4849dcae86457d6db9424 = $(`<div id="html_58eb5a0eeba4849dcae86457d6db9424" style="width: 100.0%; height: 100.0%;"><strong>Eudora Brewing co</strong><br>3022 Wilmington Pike, Dayton, OH 45429, United States</div>`)[0];
+                popup_eb806059858f0c05b5b60616b9d21013.setContent(html_58eb5a0eeba4849dcae86457d6db9424);
+            
+        
+
+        marker_cd476940363361bf3d482db9d60a3e01.bindPopup(popup_eb806059858f0c05b5b60616b9d21013)
+        ;
+
+        
+    
+    
+            marker_cd476940363361bf3d482db9d60a3e01.bindTooltip(
+                `<div>
+                     Eudora Brewing co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dd3a20ca4f1b14fdc1300422edcc5bf = L.marker(
+                [39.7617525, -84.1853175],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_cfb6268f19692caa59792a54132b76a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2077811550d80d4fa2d8797f7c98d280 = $(`<div id="html_2077811550d80d4fa2d8797f7c98d280" style="width: 100.0%; height: 100.0%;"><strong>The Dayton Beer Company</strong><br>41 Madison St, Dayton, OH 45402, United States</div>`)[0];
+                popup_cfb6268f19692caa59792a54132b76a2.setContent(html_2077811550d80d4fa2d8797f7c98d280);
+            
+        
+
+        marker_3dd3a20ca4f1b14fdc1300422edcc5bf.bindPopup(popup_cfb6268f19692caa59792a54132b76a2)
+        ;
+
+        
+    
+    
+            marker_3dd3a20ca4f1b14fdc1300422edcc5bf.bindTooltip(
+                `<div>
+                     The Dayton Beer Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cfc946702cbd191893747bc80be2887 = L.marker(
+                [39.7585444, -84.17200559999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_c5c90098c87c5bd63885cff9c70ce8cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7119ca512be3ccdfbe4e61a122f9023f = $(`<div id="html_7119ca512be3ccdfbe4e61a122f9023f" style="width: 100.0%; height: 100.0%;"><strong>Fifth Street Brewpub</strong><br>1600 E 5th St, Dayton, OH 45403, United States</div>`)[0];
+                popup_c5c90098c87c5bd63885cff9c70ce8cb.setContent(html_7119ca512be3ccdfbe4e61a122f9023f);
+            
+        
+
+        marker_9cfc946702cbd191893747bc80be2887.bindPopup(popup_c5c90098c87c5bd63885cff9c70ce8cb)
+        ;
+
+        
+    
+    
+            marker_9cfc946702cbd191893747bc80be2887.bindTooltip(
+                `<div>
+                     Fifth Street Brewpub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1a183efdf19739e135e3a11cfcf4284 = L.marker(
+                [39.6831631, -83.9293723],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_102e363e760d7ba4ba558846afd4ef2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f1da149b50e91b634b5b7cf15cad3d8 = $(`<div id="html_2f1da149b50e91b634b5b7cf15cad3d8" style="width: 100.0%; height: 100.0%;"><strong>Devil Wind Brewing</strong><br>130 S Detroit St, Xenia, OH 45385, United States</div>`)[0];
+                popup_102e363e760d7ba4ba558846afd4ef2b.setContent(html_2f1da149b50e91b634b5b7cf15cad3d8);
+            
+        
+
+        marker_b1a183efdf19739e135e3a11cfcf4284.bindPopup(popup_102e363e760d7ba4ba558846afd4ef2b)
+        ;
+
+        
+    
+    
+            marker_b1a183efdf19739e135e3a11cfcf4284.bindTooltip(
+                `<div>
+                     Devil Wind Brewing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5713d49030aeade1a2ea0d7e9a4c7873 = L.marker(
+                [39.4670862, -84.3471872],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_22ca31243d5840316dc68b9b238165ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc7d2095a5be9aba5ebe269f8bf41171 = $(`<div id="html_bc7d2095a5be9aba5ebe269f8bf41171" style="width: 100.0%; height: 100.0%;"><strong>Figleaf Brewing co</strong><br>3387 Cincinnati Dayton Rd, Middletown, OH 45044, United States</div>`)[0];
+                popup_22ca31243d5840316dc68b9b238165ee.setContent(html_bc7d2095a5be9aba5ebe269f8bf41171);
+            
+        
+
+        marker_5713d49030aeade1a2ea0d7e9a4c7873.bindPopup(popup_22ca31243d5840316dc68b9b238165ee)
+        ;
+
+        
+    
+    
+            marker_5713d49030aeade1a2ea0d7e9a4c7873.bindTooltip(
+                `<div>
+                     Figleaf Brewing co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_239ed53fc51a822f20519d7acf7ca8ff = L.marker(
+                [39.8731768, -84.311303],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_8534d89b688ae9243a368045e2f89f7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de1396b4a0eec1b0ba36224685ac3ea8 = $(`<div id="html_de1396b4a0eec1b0ba36224685ac3ea8" style="width: 100.0%; height: 100.0%;"><strong>Full Circle Brew Garden</strong><br>324 Union Blvd, Englewood, OH 45322, United States</div>`)[0];
+                popup_8534d89b688ae9243a368045e2f89f7c.setContent(html_de1396b4a0eec1b0ba36224685ac3ea8);
+            
+        
+
+        marker_239ed53fc51a822f20519d7acf7ca8ff.bindPopup(popup_8534d89b688ae9243a368045e2f89f7c)
+        ;
+
+        
+    
+    
+            marker_239ed53fc51a822f20519d7acf7ca8ff.bindTooltip(
+                `<div>
+                     Full Circle Brew Garden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7089a3da4c2ecf09be4ceb3f9ef391f9 = L.marker(
+                [39.6287588, -84.1731528],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_c833a8ab8fa389c259aa568f1b1835be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed6a8a54b3af9e7ac0de6bcccbf70c83 = $(`<div id="html_ed6a8a54b3af9e7ac0de6bcccbf70c83" style="width: 100.0%; height: 100.0%;"><strong>Heavier than Air Brewing Co</strong><br>497 Miamisburg Centerville Rd, Dayton, OH 45459, United States</div>`)[0];
+                popup_c833a8ab8fa389c259aa568f1b1835be.setContent(html_ed6a8a54b3af9e7ac0de6bcccbf70c83);
+            
+        
+
+        marker_7089a3da4c2ecf09be4ceb3f9ef391f9.bindPopup(popup_c833a8ab8fa389c259aa568f1b1835be)
+        ;
+
+        
+    
+    
+            marker_7089a3da4c2ecf09be4ceb3f9ef391f9.bindTooltip(
+                `<div>
+                     Heavier than Air Brewing Co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad8547ebe73d2fbf288f80aa4061588d = L.marker(
+                [39.5159501, -84.40655579999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_c070c880e6637c57771e9544029570e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00f17c5f61b3627f035f32b8a3492b52 = $(`<div id="html_00f17c5f61b3627f035f32b8a3492b52" style="width: 100.0%; height: 100.0%;"><strong>Gravel Road Brewing Company</strong><br>916 1st Ave, Middletown, OH 45044, United States</div>`)[0];
+                popup_c070c880e6637c57771e9544029570e0.setContent(html_00f17c5f61b3627f035f32b8a3492b52);
+            
+        
+
+        marker_ad8547ebe73d2fbf288f80aa4061588d.bindPopup(popup_c070c880e6637c57771e9544029570e0)
+        ;
+
+        
+    
+    
+            marker_ad8547ebe73d2fbf288f80aa4061588d.bindTooltip(
+                `<div>
+                     Gravel Road Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8907a9a48c00f6ade85e83526e1ce337 = L.marker(
+                [39.76335653075487, -84.1818093690732],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_59f37cd6e9e97207212d83cf9c39f2ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a1892637d7de5c210adeb64db4c91b = $(`<div id="html_05a1892637d7de5c210adeb64db4c91b" style="width: 100.0%; height: 100.0%;"><strong>Little Fish Brewing Company</strong><br>116 Webster St, Dayton, OH 45402</div>`)[0];
+                popup_59f37cd6e9e97207212d83cf9c39f2ed.setContent(html_05a1892637d7de5c210adeb64db4c91b);
+            
+        
+
+        marker_8907a9a48c00f6ade85e83526e1ce337.bindPopup(popup_59f37cd6e9e97207212d83cf9c39f2ed)
+        ;
+
+        
+    
+    
+            marker_8907a9a48c00f6ade85e83526e1ce337.bindTooltip(
+                `<div>
+                     Little Fish Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dc863bbff4d9d8fe5fed8352ed47730 = L.marker(
+                [39.8884487, -84.2119304],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_f88cf34eccf5382ebbd6dc7fbb2c932f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5b59ea38a74f87a65bc3f52ab05a41d = $(`<div id="html_c5b59ea38a74f87a65bc3f52ab05a41d" style="width: 100.0%; height: 100.0%;"><strong>The Hairless Hare Brewing Company</strong><br>738 W National Rd, Vandalia, OH 45377, United States</div>`)[0];
+                popup_f88cf34eccf5382ebbd6dc7fbb2c932f.setContent(html_c5b59ea38a74f87a65bc3f52ab05a41d);
+            
+        
+
+        marker_2dc863bbff4d9d8fe5fed8352ed47730.bindPopup(popup_f88cf34eccf5382ebbd6dc7fbb2c932f)
+        ;
+
+        
+    
+    
+            marker_2dc863bbff4d9d8fe5fed8352ed47730.bindTooltip(
+                `<div>
+                     The Hairless Hare Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_124578234619275e70ec925140e4c541 = L.marker(
+                [39.6089778, -84.1627194],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_f0854d89cc196c621b051fa9b1526c9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce1909b9531e581fb9daee6d57e56738 = $(`<div id="html_ce1909b9531e581fb9daee6d57e56738" style="width: 100.0%; height: 100.0%;"><strong>Lock 27 Brewing</strong><br>1035 S Main St, Centerville, OH 45458, United States</div>`)[0];
+                popup_f0854d89cc196c621b051fa9b1526c9f.setContent(html_ce1909b9531e581fb9daee6d57e56738);
+            
+        
+
+        marker_124578234619275e70ec925140e4c541.bindPopup(popup_f0854d89cc196c621b051fa9b1526c9f)
+        ;
+
+        
+    
+    
+            marker_124578234619275e70ec925140e4c541.bindTooltip(
+                `<div>
+                     Lock 27 Brewing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db8e72dd5020f543a97a6ccdf1ced7b0 = L.marker(
+                [39.61541769999999, -84.158703],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_a55c6b42503bbf365d3577a6a20660fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c94750737ea67cf410cbdc254d25d6a3 = $(`<div id="html_c94750737ea67cf410cbdc254d25d6a3" style="width: 100.0%; height: 100.0%;"><strong>Loose Ends Brewing Company</strong><br>890 S Main St, Centerville, OH 45458, United States</div>`)[0];
+                popup_a55c6b42503bbf365d3577a6a20660fb.setContent(html_c94750737ea67cf410cbdc254d25d6a3);
+            
+        
+
+        marker_db8e72dd5020f543a97a6ccdf1ced7b0.bindPopup(popup_a55c6b42503bbf365d3577a6a20660fb)
+        ;
+
+        
+    
+    
+            marker_db8e72dd5020f543a97a6ccdf1ced7b0.bindTooltip(
+                `<div>
+                     Loose Ends Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aac4fd8e03f1e2a0cf0e8f114111d60b = L.marker(
+                [39.9271981, -83.81261169999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_7f518c996cc975a18fa03cc95f8ea7f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9cdefc4bfc4c306f981575954a31e83 = $(`<div id="html_b9cdefc4bfc4c306f981575954a31e83" style="width: 100.0%; height: 100.0%;"><strong>Mother Stewarts </strong><br>Taproom - 102 W. Columbia Street Mailing, 109 W North St, Springfield, OH 45504, United States</div>`)[0];
+                popup_7f518c996cc975a18fa03cc95f8ea7f9.setContent(html_b9cdefc4bfc4c306f981575954a31e83);
+            
+        
+
+        marker_aac4fd8e03f1e2a0cf0e8f114111d60b.bindPopup(popup_7f518c996cc975a18fa03cc95f8ea7f9)
+        ;
+
+        
+    
+    
+            marker_aac4fd8e03f1e2a0cf0e8f114111d60b.bindTooltip(
+                `<div>
+                     Mother Stewarts 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e64d90c0ae0d160fb1e02a9635f4f13 = L.marker(
+                [39.63920660000001, -84.2879274],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_a63a7fef49aa5b2a70b14398b7896e4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0596ba6d0e47f927a5e74a0d17476af0 = $(`<div id="html_0596ba6d0e47f927a5e74a0d17476af0" style="width: 100.0%; height: 100.0%;"><strong>Lucky Star Brewery Cantina</strong><br>219 S 2nd St, Miamisburg, OH 45342, United States</div>`)[0];
+                popup_a63a7fef49aa5b2a70b14398b7896e4d.setContent(html_0596ba6d0e47f927a5e74a0d17476af0);
+            
+        
+
+        marker_5e64d90c0ae0d160fb1e02a9635f4f13.bindPopup(popup_a63a7fef49aa5b2a70b14398b7896e4d)
+        ;
+
+        
+    
+    
+            marker_5e64d90c0ae0d160fb1e02a9635f4f13.bindTooltip(
+                `<div>
+                     Lucky Star Brewery Cantina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9af71235bad3b8ba47a83732def8ea61 = L.marker(
+                [39.5160795, -84.3991381],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_218455e0de9e1e4cc2a23e76ed05df76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39acf5bb8943dbbddb15cbc2e4d4a853 = $(`<div id="html_39acf5bb8943dbbddb15cbc2e4d4a853" style="width: 100.0%; height: 100.0%;"><strong>N.E.W. Ales Brewing</strong><br>1330 Manchester Ave, Middletown, OH 45042, United States</div>`)[0];
+                popup_218455e0de9e1e4cc2a23e76ed05df76.setContent(html_39acf5bb8943dbbddb15cbc2e4d4a853);
+            
+        
+
+        marker_9af71235bad3b8ba47a83732def8ea61.bindPopup(popup_218455e0de9e1e4cc2a23e76ed05df76)
+        ;
+
+        
+    
+    
+            marker_9af71235bad3b8ba47a83732def8ea61.bindTooltip(
+                `<div>
+                     N.E.W. Ales Brewing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_165bbe66b048aff467e0aed4d149d17e = L.marker(
+                [39.7634586796493, -84.18476111507489],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_f41c9715e8f575edb80ec5c50859f2f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cea9454724bd63add89849304cd15505 = $(`<div id="html_cea9454724bd63add89849304cd15505" style="width: 100.0%; height: 100.0%;"><strong>Moeller Brew Barn</strong><br>416 E 1st St, Dayton, OH 45402</div>`)[0];
+                popup_f41c9715e8f575edb80ec5c50859f2f9.setContent(html_cea9454724bd63add89849304cd15505);
+            
+        
+
+        marker_165bbe66b048aff467e0aed4d149d17e.bindPopup(popup_f41c9715e8f575edb80ec5c50859f2f9)
+        ;
+
+        
+    
+    
+            marker_165bbe66b048aff467e0aed4d149d17e.bindTooltip(
+                `<div>
+                     Moeller Brew Barn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b55643ac05bea87526d3fe73d7a025ce = L.marker(
+                [39.674956, -84.11585529999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_0566e40aa11873c6fec6d8837e2625ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70410ce69d27bdc26b40dc34cb37ca27 = $(`<div id="html_70410ce69d27bdc26b40dc34cb37ca27" style="width: 100.0%; height: 100.0%;"><strong>Nowhere In Particular Cabinet of Curiosities</strong><br>4716 Wilmington Pike, Kettering, OH 45440, United States</div>`)[0];
+                popup_0566e40aa11873c6fec6d8837e2625ec.setContent(html_70410ce69d27bdc26b40dc34cb37ca27);
+            
+        
+
+        marker_b55643ac05bea87526d3fe73d7a025ce.bindPopup(popup_0566e40aa11873c6fec6d8837e2625ec)
+        ;
+
+        
+    
+    
+            marker_b55643ac05bea87526d3fe73d7a025ce.bindTooltip(
+                `<div>
+                     Nowhere In Particular Cabinet of Curiosities
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7c773e7e02aa8c177118571f8dd1f0d = L.marker(
+                [39.7118033, -84.027975],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_5804eb7538450f785b4d8ab572ae104e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e16615186f88ce4154d53120199e287c = $(`<div id="html_e16615186f88ce4154d53120199e287c" style="width: 100.0%; height: 100.0%;"><strong>Southern Ohio Brewing </strong><br>818 Factory Rd, Dayton, OH 45434, United States</div>`)[0];
+                popup_5804eb7538450f785b4d8ab572ae104e.setContent(html_e16615186f88ce4154d53120199e287c);
+            
+        
+
+        marker_c7c773e7e02aa8c177118571f8dd1f0d.bindPopup(popup_5804eb7538450f785b4d8ab572ae104e)
+        ;
+
+        
+    
+    
+            marker_c7c773e7e02aa8c177118571f8dd1f0d.bindTooltip(
+                `<div>
+                     Southern Ohio Brewing 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3a9a005fbf8de1adfaea425a5de1b72 = L.marker(
+                [39.8072378, -83.8885078],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_9e27450c7ea1ab50488ecd0c170d0fca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31030208c14b1393f038de1050508bef = $(`<div id="html_31030208c14b1393f038de1050508bef" style="width: 100.0%; height: 100.0%;"><strong>Trail Town Brewing</strong><br>101 Corry St, Yellow Springs, OH 45387, United States</div>`)[0];
+                popup_9e27450c7ea1ab50488ecd0c170d0fca.setContent(html_31030208c14b1393f038de1050508bef);
+            
+        
+
+        marker_a3a9a005fbf8de1adfaea425a5de1b72.bindPopup(popup_9e27450c7ea1ab50488ecd0c170d0fca)
+        ;
+
+        
+    
+    
+            marker_a3a9a005fbf8de1adfaea425a5de1b72.bindTooltip(
+                `<div>
+                     Trail Town Brewing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2e9ce7481e16e7295f7040e029e49aa = L.marker(
+                [39.6379734, -84.2886036],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_39ff83bcb1cf1c7abc11af4dbf0793b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b8d02daa7ad667a661eda423b5ac14a = $(`<div id="html_4b8d02daa7ad667a661eda423b5ac14a" style="width: 100.0%; height: 100.0%;"><strong>Star City Brewing Company</strong><br>319 S 2nd St, Miamisburg, OH 45342, United States</div>`)[0];
+                popup_39ff83bcb1cf1c7abc11af4dbf0793b4.setContent(html_4b8d02daa7ad667a661eda423b5ac14a);
+            
+        
+
+        marker_b2e9ce7481e16e7295f7040e029e49aa.bindPopup(popup_39ff83bcb1cf1c7abc11af4dbf0793b4)
+        ;
+
+        
+    
+    
+            marker_b2e9ce7481e16e7295f7040e029e49aa.bindTooltip(
+                `<div>
+                     Star City Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2c2598d00d9d7a888a7718749225cb9 = L.marker(
+                [39.7750821, -84.0682683],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_46e8391701812b8d5ee540016a743fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b76dd819aaa48c7d501cf79a24474403 = $(`<div id="html_b76dd819aaa48c7d501cf79a24474403" style="width: 100.0%; height: 100.0%;"><strong>Wandering Griffin Brewery & Pub</strong><br>3725 Presidential Dr, Beavercreek, OH 45324, United States</div>`)[0];
+                popup_46e8391701812b8d5ee540016a743fa8.setContent(html_b76dd819aaa48c7d501cf79a24474403);
+            
+        
+
+        marker_c2c2598d00d9d7a888a7718749225cb9.bindPopup(popup_46e8391701812b8d5ee540016a743fa8)
+        ;
+
+        
+    
+    
+            marker_c2c2598d00d9d7a888a7718749225cb9.bindTooltip(
+                `<div>
+                     Wandering Griffin Brewery & Pub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e143e9663f802fbf5f410dda40b640d = L.marker(
+                [39.7595599, -84.18611489999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_7261111b914417d9de7a977c9085a8d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d9fe36e324e391589cebbf33ab9b8a5 = $(`<div id="html_5d9fe36e324e391589cebbf33ab9b8a5" style="width: 100.0%; height: 100.0%;"><strong>Warped Wing Brewing Company</strong><br>26 Wyandot St, Dayton, OH 45402, United States</div>`)[0];
+                popup_7261111b914417d9de7a977c9085a8d3.setContent(html_5d9fe36e324e391589cebbf33ab9b8a5);
+            
+        
+
+        marker_8e143e9663f802fbf5f410dda40b640d.bindPopup(popup_7261111b914417d9de7a977c9085a8d3)
+        ;
+
+        
+    
+    
+            marker_8e143e9663f802fbf5f410dda40b640d.bindTooltip(
+                `<div>
+                     Warped Wing Brewing Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b4e0a26bed5ef012ba11233c78b82b0 = L.marker(
+                [39.7572542, -84.1839232],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_15641b879905816148d476635c161175 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f269de6d3bc2979c4fe7c376f3f91eb = $(`<div id="html_7f269de6d3bc2979c4fe7c376f3f91eb" style="width: 100.0%; height: 100.0%;"><strong>Toxi Brew Co</strong><br>431 E 5th St, Dayton, OH 45402, United States</div>`)[0];
+                popup_15641b879905816148d476635c161175.setContent(html_7f269de6d3bc2979c4fe7c376f3f91eb);
+            
+        
+
+        marker_0b4e0a26bed5ef012ba11233c78b82b0.bindPopup(popup_15641b879905816148d476635c161175)
+        ;
+
+        
+    
+    
+            marker_0b4e0a26bed5ef012ba11233c78b82b0.bindTooltip(
+                `<div>
+                     Toxi Brew Co
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a27d13291838f07081b0f61a7ed4d539 = L.marker(
+                [39.8098459, -83.88841479999999],
+                {}
+            ).addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+    
+        var popup_24ba5b9f137bd4dff75fd7e601eacd3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a4aa56c0cad706dfa88297014a3a6d0 = $(`<div id="html_4a4aa56c0cad706dfa88297014a3a6d0" style="width: 100.0%; height: 100.0%;"><strong>Yellow Springs Brewery</strong><br>305 Walnut St, Yellow Springs, OH 45387, United States</div>`)[0];
+                popup_24ba5b9f137bd4dff75fd7e601eacd3a.setContent(html_4a4aa56c0cad706dfa88297014a3a6d0);
+            
+        
+
+        marker_a27d13291838f07081b0f61a7ed4d539.bindPopup(popup_24ba5b9f137bd4dff75fd7e601eacd3a)
+        ;
+
+        
+    
+    
+            marker_a27d13291838f07081b0f61a7ed4d539.bindTooltip(
+                `<div>
+                     Yellow Springs Brewery
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_6d4490f3286b76979b4b4c1a30118326.addTo(map_5be4dbd2ca804cbf765f43893f388548);
+        
+</script>
+</html>
